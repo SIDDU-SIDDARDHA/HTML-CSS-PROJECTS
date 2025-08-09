@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddu Biodata</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #e0e7ff, #ffffff);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      header {
+        background: linear-gradient(90deg, #00c4b4, #7c3aed);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      header:hover {
+        transform: translateY(-5px);
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        padding: 40px;
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(45deg, #10b981, #6ee7b7);
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #ffffff,
+          transparent
+        );
+        margin: 10px 0;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #f8fafc;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        font-size: 28px;
+        color: #1e3a8a;
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50%;
+        height: 3px;
+        background: linear-gradient(to right, #3b82f6, #10b981);
+        transition: width 0.3s ease;
+      }
+
+      h2:hover::after {
+        width: 100%;
+      }
+
+      p,
+      span,
+      a {
+        font-size: 18px;
+        color: #1f2937;
+        margin: 10px 0;
+        line-height: 1.6;
+        transition: color 0.3s ease;
+      }
+
+      a {
+        text-decoration: none;
+        color: #3b82f6;
+        display: block;
+        padding: 8px;
+        border-radius: 5px;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      a:hover {
+        background: #e0f2fe;
+        transform: translateX(10px);
+        color: #1e3a8a;
+      }
+
+      span {
+        display: block;
+        padding: 8px;
+        border-radius: 5px;
+        background: #f1f5f9;
+        margin: 5px 0;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      span:hover {
+        background: #dbeafe;
+        transform: translateX(5px);
+      }
+
+      button {
+        background: linear-gradient(45deg, #10b981, #22d3ee);
+        border: none;
+        padding: 12px 24px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background: linear-gradient(45deg, #059669, #0ea5e9);
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      #more-details {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      #more-details.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .section {
+        animation: fadeIn 0.5s ease forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        SIDDU BIODATA
+        <hr />
+      </h1>
+    </header>
+    <div class="container">
+      <div class="section">
+        <h2>Personal Details</h2>
+        <hr />
+        <p><strong>Name:</strong> Siddu</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Location:</strong> Venkatagiri, Tirupati (dist)</p>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+        <hr />
+        <p>
+          B.Tech in Computer Science and Engineering (Artificial Intelligence
+          and Machine Learning), Tirupati (dist)
+        </p>
+      </div>
+      <div class="section">
+        <h2>Course Details</h2>
+        <hr />
+        <a href="https://www.instagram.com/p/CKq1u60go..." target="_blank"
+          >Python</a
+        >
+        <a href="https://www.instagram.com/p/CKq1u60go..." target="_blank"
+          >Java</a
+        >
+        <a href="https://www.instagram.com/p/CKq1u60go..." target="_blank"
+          >C Programming</a
+        >
+        <a href="https://www.instagram.com/p/CKq1u60go..." target="_blank"
+          >JavaScript</a
+        >
+      </div>
+      <div class="section">
+        <h2>Skills</h2>
+        <hr />
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="section">
+        <h2>Contact</h2>
+        <hr />
+        <p>GMAIL: siddardhasiddu946@gmail.com</p>
+        <p>PHONE NO: 7842140490</p>
+        <button
+          onclick="document.getElementById('more-details').classList.toggle('show')"
+        >
+          Show More Details
+        </button>
+      </div>
+      <div id="more-details">
+        <div class="section">
+          <h2>Hobbies</h2>
+          <hr />
+          <p>
+            Playing cricket, watching movies, listening to music, and reading
+            books.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Experience</h2>
+          <hr />
+          <p>
+            Designed a Tic-Tac-Toe game using Python and some HTML and CSS
+            projects.
+          </p>
+        </div>
+      </div>
+    </div>
+     
+  </body>
+</html>
